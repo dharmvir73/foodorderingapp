@@ -1,4 +1,6 @@
 import "./Login.css"
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
     return ( 
@@ -22,7 +24,11 @@ const Login = () => {
             </div>
             <span className="forgotPass">Forgot Password?</span>
             <hr />
-            <div className="registration">Need an account? <span style={{textDecoration:"underline", cursor: "pointer"}}>SIGN UP</span></div>
+            <div className="registration" >Need an account? 
+                <Link to="/register" >
+                    <span style={{textDecoration:"none", cursor: "pointer", color:"black"}}> SIGN UP</span>
+                </Link>
+        </div>
         </div>
      );
 }
